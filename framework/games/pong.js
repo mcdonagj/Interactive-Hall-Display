@@ -20,11 +20,10 @@ var playerB_XPosition = (windowWidth - 100), playerB_YPosition = 500;
 // Start the ball's position in the center of the screen.
 var ball_XPosition = (windowWidth / 2), ball_YPosition = (windowHeight / 2);
 
-var players = [false, false];
+// Store player identifiers and corresponding y coordinates.
 var player_IDs = [0, 0], playerID_Y = [0, 0];
 
 function touchMove(x, y, id) {
-    //touchX = x * windowWidth;
     var i;
     for (i = 0; i < player_IDs.length; i++) {
         if ((player_IDs[i] != id) && (player_IDs[i] == 0)) {
@@ -32,12 +31,12 @@ function touchMove(x, y, id) {
         } else {
             if (id == player_IDs[0]) {
                 playerID_Y[0] = y * windowHeight;
-            } else if (id == player_IDs[1]) {
+            } else {
+                // TODO: Test this behavior.
                 playerID_Y[1] = y * windowHeight;
             }
         }
-    }
-    //touchY = y * windowHeight;        
+    }     
 }
 
 function setup() {
@@ -47,20 +46,25 @@ function setup() {
 }
 
 function createPlayerA() {
-    //rect(playerA_XPosition, 0, 15, 15);
+    // fill(r, g, b)
     fill(255, 0, 0);
+
+    // rect(x, y, width, height)
     rect(playerA_XPosition, playerID_Y[0], playerA_Width, playerA_Height);
 }
 
 function createPlayerB() {
-    // rect(playerB_XPosition, 0, 15, 15);
+    // fill(r, g, b)
     fill(0, 0, 255);
+
     // rect(x, y, width, height)
     rect(playerB_XPosition, playerID_Y[1], playerB_Width, playerB_Height);
 }
 
 function createBall() {
+    // fill(r, g, b)
     fill(0, 255, 0);
+    
     // ellipse(x, y, width, height)
     ellipse(ball_XPosition, ball_YPosition, ballWidth, ballHeight);
 }
