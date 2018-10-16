@@ -1,4 +1,3 @@
-
 function githubAccount() { return "mcdonagj"; }
 function userpic() { return "mcdonaldg.png"; }
 function graddate() { return "JMU '18"; }
@@ -6,9 +5,13 @@ function gameMessageHandler(msg) { }
 
 var touchX = 0, touchY = 0, lastTouchX = 0, lastTouchY = 0;
 
+// Set ball height & width.
 var ballHeight = (windowHeight / 17.5), ballWidth = (windowHeight / 17.5);
 
+// Set player A, player B paddle height.
 var playerA_Height = (windowHeight / 4.5), playerB_Height = (windowHeight / 4.5);
+
+// Set player A, player B paddle sizes.
 var playerA_Width = 15, playerB_Width = 15;
 
 // X Position should stay fixed; Y Position changes based on input.
@@ -36,13 +39,15 @@ function touchMove(x, y, id) {
                 playerID_Y[1] = y * windowHeight;
             }
         }
-    }     
+    }
 }
 
 function setup() {
     var canv = createCanvas(windowWidth, windowHeight);
     canv.parent("bgCanvas");
-    fill(0, 0, 0, 0);
+    
+    // fill(r, g, b)
+    fill(0, 0, 0);
 }
 
 function createPlayerA() {
@@ -64,13 +69,15 @@ function createPlayerB() {
 function createBall() {
     // fill(r, g, b)
     fill(0, 255, 0);
-    
+
     // ellipse(x, y, width, height)
     ellipse(ball_XPosition, ball_YPosition, ballWidth, ballHeight);
 }
 
 function createArena() {
     // TODO: Create bounds for where the ball is in play. 
+    // rect(x, y, width, height)
+    rect(0, 0, windowWidth, windowHeight);
 }
 
 function draw() {
