@@ -1,4 +1,6 @@
-﻿# Interactive Hall Display
+﻿<center><img src="https://www.jmu.edu/identity/_files/JMU-Logo-RGB-vert-purple.png" width="367" height="238"/></center>
+
+# Interactive Hall Display
 
 Welcome! This is the source code repository for the Interactive Hall Display located outside James Madison University's Computer Science department. 
 
@@ -56,8 +58,12 @@ function  userpic() { return  "<student-picture-name>.png"; }
 function  graddate() { return  "JMU 'XX"; }
 ```
 
-If you wish to have a picture, save your picture as a Portable Network Graphic (`.png`) into the following directory: `framework/img/coders/`.
+If you wish to have a picture, save your picture as a Portable Network Graphic (`.png`) into the following directory: `framework/img/coders/`
 
-Your picture's filename should be your last name followed by the first letter of your first name. Example: `bowersj.png`
+Please follow the naming convention when inserting your picture into this directory. 
+
+Your picture's filename should be your last name followed by the first letter of your first name.
+
+Example: `bowersj.png`
 
 Any inappropriate or suggestive pictures will be removed.
