@@ -5,6 +5,7 @@ Welcome! This is the source code repository for the Interactive Hall Display loc
 If you have questions about the contents of this repository, please contact `bowersjc@jmu.edu` or an executive member of the JMU Game Development club.
 
 Game Development Executives for Fall 2018:
+
 President: Jason Zareski -- <zareskj@dukes.jmu.edu>
 Vice President: Nicholas Halvorsen -- <halvornr@dukes.jmu.edu>
 
@@ -18,19 +19,22 @@ After installing NodeJS, install the following modules using NPM:
 
 ## Running & Interacting with the Server
 
-Using the command-line, type the following command: `node index.js` to start the server. In your browser, you can visit the following URLs: 
-| URL   | Usage  |
-|--|--|
+Using the command-line, type the following command: `node index.js` to start the server. In your browser, you can visit the following URLs:
+
+
+| URL      | Usage     |
+| ---      | ---       |
 | http://localhost:8001/ | Controller Screen |
 | http://localhost:8001/player.html? |App Homepage |
-|http://localhost:8001/player.html?sketch=gamename | Navigates to a specific game page. |
+| http://localhost:8001/player.html?sketch=gamename | Navigates to a specific game page. |
 
 You can also view the live information on the board by visiting:
 `http://halldisplay.cs.jmu.edu`
 
 ## Adding a Game
 
-All game files are JavaScript files that are stored within the following directory: `framework/games/`. Feel free to reference the basic template file (`sketch2.js`) or other student creations when creating your game!
+All game files are JavaScript files that are stored within the following directory: `framework/games/`.
+Feel free to reference the basic template file (`sketch2.js`) or other student creations when creating your game!
 
 ## Adding your Student Information
 
