@@ -20,7 +20,7 @@ The Interactive-Hall-Display requires NodeJS to run.
 This application runs on a NodeJS-based web application server [called Express](https://expressjs.com/en/api.html).  
 Communication between the users and server are handled [by Socket.IO](https://socket.io/docs/).
 
-[You can download NodeJS from here](https://nodejs.org/en/) or install it via homebrew with the following Terminal command:
+[You can download NodeJS from here](https://nodejs.org/en/) or install it via homebrew with the following Terminal command:  
 `brew install nodejs`
 
 After installing NodeJS, install the following modules using NPM:  
