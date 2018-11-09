@@ -19,7 +19,7 @@ Vice President: Nicholas Halvorsen -- <halvornr@dukes.jmu.edu>
 ## Installing Dependencies
 
 The Interactive-Hall-Display requires NodeJS to run.\
-You can install it from here or install it via home-brew with the following Terminal command:
+[You can download it from here](https://nodejs.org/en/) or install it via homebrew with the following Terminal command:
 
 `brew install nodejs`
 
