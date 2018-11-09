@@ -27,8 +27,7 @@ After installing NodeJS, install the following modules using NPM:
 
 ## Running & Interacting with the Server
 
-Using the command-line, type the following command to start the server:  
-`node index.js`
+Using the command-line, type the following command to start the server: `node index.js`
 
 In your browser, you can visit the following URLs:
 
