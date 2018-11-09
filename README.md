@@ -1,6 +1,4 @@
-﻿
-# Interactive Hall Display
-
+﻿# Interactive Hall Display
 <p align="center">
   <img width="367" height="238" src="https://www.jmu.edu/identity/_files/JMU-Logo-RGB-vert-purple.png">
 </p>
@@ -18,20 +16,18 @@ Vice President: Nicholas Halvorsen -- <halvornr@dukes.jmu.edu>
 
 ## Installing Dependencies
 
-The Interactive-Hall-Display requires NodeJS to run.\
-[You can download it from here](https://nodejs.org/en/) or install it via homebrew with the following Terminal command:
+The Interactive-Hall-Display requires NodeJS to run.  
 
+[You can download it from here](https://nodejs.org/en/) or install it via homebrew with the following Terminal command:
 `brew install nodejs`
 
-After installing NodeJS, install the following modules using NPM:
-
+After installing NodeJS, install the following modules using NPM:  
 `npm install socketio` && `npm install express`
 
 
 ## Running & Interacting with the Server
 
-Using the command-line, type the following command to start the server:
-
+Using the command-line, type the following command to start the server:  
 `node index.js`
 
 In your browser, you can visit the following URLs:
@@ -63,10 +59,8 @@ function  graddate() { return  "JMU 'XX"; }
 
 If you wish to have a picture, save your picture as a Portable Network Graphic (`.png`) into the following directory: `framework/img/coders/`
 
-Please follow the naming convention when inserting your picture into this directory. 
-
-Your picture's filename should be your last name followed by the first letter of your first name.
-
+Please follow the naming convention when inserting your picture into this directory.  
+Your picture's filename should be your last name followed by the first letter of your first name.  
 Example: `bowersj.png`
 
 Any inappropriate or suggestive pictures will be removed.
