@@ -11,8 +11,6 @@ var app = express();
 
 app.use(express.static('framework'));
 
-var controllerCount = 0;
-
 var server = require('http').createServer(app).listen(process.env.PORT || 8001);
 
 // Create the Socket.IO server and attach it to the HTTP server
@@ -32,8 +30,7 @@ io.of("/player").on('connection', function(socket) {
 });
 
 io.of("/controller").on('connection', function(socket) {
-    console.log('A controller connected: Assigned Number: ' + controllerCount);
-    controllerCount += 1;
+    console.log('A controller connected:');
 
     socket.on('load game', function(msg) {
         console.log("loading game: " + msg);
