@@ -1,6 +1,9 @@
-﻿<center><img src="https://www.jmu.edu/identity/_files/JMU-Logo-RGB-vert-purple.png" width="367" height="238"/></center>
-
+﻿
 # Interactive Hall Display
+
+<p align="center">
+  <img width="367" height="238" src="https://www.jmu.edu/identity/_files/JMU-Logo-RGB-vert-purple.png">
+</p>
 
 Welcome! This is the source code repository for the Interactive Hall Display located outside James Madison University's Computer Science department. 
 
