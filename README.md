@@ -49,6 +49,12 @@ All game files are JavaScript files that are stored within the following directo
 
 Feel free to reference the basic template file (`sketch2.js`) or other student creations when creating your game!
 
+## Adding Slides
+
+All slides are HTML files that are stored within the following directory: `framework/`
+
+Clubs are encouraged to add club information by following the provided `slides-example.html` template file.
+
 ## Adding your Student Information
 
 All student information should be specified with the following functions within your `<game-name>.js` file:
