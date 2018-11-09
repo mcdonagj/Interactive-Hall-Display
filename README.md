@@ -53,7 +53,7 @@ Feel free to reference the basic template file (`sketch2.js`) or other student c
 
 All slides are HTML files that are stored within the following directory: `framework/`
 
-Clubs are encouraged to add club information by following the provided `slides-example.html` template file.
+Clubs are encouraged to add club information by following the provided template file. (`slides-example.html`)
 
 ## Adding your Student Information
 
