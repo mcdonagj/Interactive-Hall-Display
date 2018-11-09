@@ -1,4 +1,4 @@
-# Interactive Hall Display
+﻿# Interactive Hall Display
 
 Welcome! This is the source code repository for the Interactive Hall Display located outside James Madison University's Computer Science department. This display is utilized to display announcements and events to the student body throughout the semester. Students are welcome to fork this repository and submit pull-requests to add functionality to the display. 
 
@@ -46,3 +46,4 @@ If you wish to have a picture, save your picture as a Portable Network Graphic (
 Your picture's filename should be your last name followed by the first letter of your first name. Example: `bowersj.png`
 
 Any inappropriate or suggestive pictures will be removed.
+
