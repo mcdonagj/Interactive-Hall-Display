@@ -59,7 +59,6 @@ function  graddate() { return  "JMU 'XX"; }
 If you wish to have a picture, save your picture as a Portable Network Graphic (`.png`) into the following directory: `framework/img/coders/`
 
 Please follow the naming convention when inserting your picture into this directory.  
-Your picture's filename should be your last name followed by the first letter of your first name.  
-Example: `bowersj.png`
+Your picture's filename should be your last name followed by the first letter of your first name. (`bowersj.png`)
 
 Any inappropriate or suggestive pictures will be removed.
