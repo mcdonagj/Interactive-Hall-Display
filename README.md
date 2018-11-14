@@ -25,7 +25,7 @@ After installing NodeJS, install the following modules using NPM:
 
 ## Running & Interacting with the Server
 
-Open the following file with a text editor of your preference: `index.js`.  
+Open the following file with a text editor of your preference: `index.js`.
 
 On line 14, change the following line from running on port 80 to an available port of your choice:  
 `var server = require('http').createServer(app).listen(process.env.PORT || 80);`.
@@ -33,16 +33,17 @@ On line 14, change the following line from running on port 80 to an available po
 This is the port that the NodeJS server will run on.  
 You should manually configure this port depending upon your local system's port configuration.
 
-Using the command-line, type the following command to start the server: `node index.js`
+Using the command-line, type the following command to start the server: `node index.js`  
+Note: You can also run the server by typing the navigating to the project directory and running `./server.sh`.
 
 In your browser, you can visit the following URLs:
 
 
 | URL      | Usage     |
 | ---      | ---       |
-| http://localhost:chosen_port/ | Controller Screen |
-| http://localhost:chosen_port/player.html? |App Homepage |
-| http://localhost:chosen_port/player.html?sketch=gamename | Navigates to a specific game page. |
+| http://localhost:PORT/ | Controller Screen |
+| http://localhost:PORT/player.html? |App Homepage |
+| http://localhost:PORT/player.html?sketch=gamename | Navigates to a specific game page. |
 
 You can also view the live information on the board by visiting:  
 `http://halldisplay.cs.jmu.edu`
