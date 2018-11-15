@@ -31,10 +31,9 @@ On line 14, change the following line from running on port 80 to an available po
 `var server = require('http').createServer(app).listen(process.env.PORT || 80);`.
 
 This is the port that the NodeJS server will run on.  
-You should manually configure this port depending upon your local system's port configuration.
+You should manually configure this port depending upon your local system's port configuration.  
 
-Using the command-line, type the following command to start the server: `node index.js`  
-Note: You can also run the server by typing the navigating to the project directory and running `./server.sh`.
+You can run the server by navigating to the project directory and running `./server.sh`.
 
 In your browser, you can visit the following URLs:
 
