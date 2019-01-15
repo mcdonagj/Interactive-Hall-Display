@@ -44,7 +44,7 @@ function touchMove(x, y, id) {
         } else {
             if (id == player_IDs[0]) {
                 playerID_Y[0] = y * windowHeight;
-            } else {
+            } else if (id == player_IDs[1]) {
                 // TODO: Test this behavior.
                 playerID_Y[1] = y * windowHeight;
             }
@@ -107,6 +107,8 @@ function resetBoard(i) {
 function changeDirection() {
     xSpeed = xSpeed * -1;
 }
+
+
 
 function draw() {
     background(51);
