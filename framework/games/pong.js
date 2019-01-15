@@ -3,41 +3,41 @@ function userpic() { return "mcdonaldg.png"; }
 function graddate() { return "JMU '18"; }
 function gameMessageHandler(msg) { }
 
-var touchX = 0, touchY = 0, lastTouchX = 0, lastTouchY = 0;
+let touchX = 0, touchY = 0, lastTouchX = 0, lastTouchY = 0;
 
 // Set ball speed.
-var xSpeed = 4;
+let xSpeed = -4;
 
 // Set ball height & width.
-var ballHeight = (windowHeight / 17.5), ballWidth = (windowHeight / 17.5);
+let ballHeight = (windowHeight / 17.5), ballWidth = (windowHeight / 17.5);
 
 // Set player A, player B paddle height.
-var playerA_Height = (windowHeight / 4.5), playerB_Height = (windowHeight / 4.5);
+let playerA_Height = (windowHeight / 4.5), playerB_Height = (windowHeight / 4.5);
 
 // Set player A, player B paddle sizes.
-var playerA_Width = 15, playerB_Width = 15;
+let playerA_Width = 15, playerB_Width = 15;
 
 // Set parameters for the front of each player's paddle.
-var FRONT_OF_PLAYER_A = (playerA_XPosition + (playerA_Width / 2));
-var FRONT_OF_PLAYER_B = (playerB_XPosition - (playerB_Width / 2));
+let FRONT_OF_PLAYER_A = (playerA_XPosition + (playerA_Width / 2));
+let FRONT_OF_PLAYER_B = (playerB_XPosition - (playerB_Width / 2));
 
 // X Position should stay fixed; Y Position changes based on input.
-var playerA_XPosition = 100, playerA_YPosition = (windowHeight / 2);
+let playerA_XPosition = 100, playerA_YPosition = (windowHeight / 2);
 
 // X Position should stay fixed; Y Position changes based on input.
-var playerB_XPosition = (windowWidth - 100), playerB_YPosition = (windowHeight / 2);
+let playerB_XPosition = (windowWidth - 100), playerB_YPosition = (windowHeight / 2);
 
 // Start the ball's position in the center of the screen.
-var ball_XPosition = (windowWidth / 2), ball_YPosition = (windowHeight / 2);
+let ball_XPosition = (windowWidth / 2), ball_YPosition = (windowHeight / 2);
 
 // Store player identifiers and corresponding y coordinates.
-var player_IDs = [0, 0], playerID_Y = [0, 0];
+let player_IDs = [0, 0], playerID_Y = [0, 0];
 
 // Store the player scores.
-var player_Scores = [0, 0];
+let player_Scores = [0, 0];
 
 function touchMove(x, y, id) {
-    var i;
+    let i;
     for (i = 0; i < player_IDs.length; i++) {
         if ((player_IDs[i] != id) && (player_IDs[i] == 0)) {
             player_IDs[i] = id;
@@ -53,7 +53,7 @@ function touchMove(x, y, id) {
 }
 
 function setup() {
-    var canv = createCanvas(windowWidth, windowHeight);
+    let canv = createCanvas(windowWidth, windowHeight);
     canv.parent("bgCanvas");
     
     // fill(r, g, b)
@@ -92,11 +92,11 @@ function createScoreboard() {
 
     fill(255, 255, 255);
     textSize(25);
-    text(player_Scores[0], ((windowWidth+100)) / 2, 700);
+    text(player_Scores[0], windowWidth / 2, (windowHeight / 2));
 
     fill(255, 255, 255);
     textSize(25);
-    text(player_Scores[1], ((windowWidth-100)) / 2, 700);
+    text(player_Scores[1], windowWidth / 2, (windowHeight / 2));
     
 }
 
@@ -127,14 +127,15 @@ function draw() {
         player_Scores[1] = player_Scores[1] + 1;
     }
 
-    if (ball_YPosition == playerID_Y[0]) {
-        //xSpeed = 4;
-        changeDirection();
+    if (ball_XPosition <= playerA_XPosition) {
+        if(ball_YPosition >= playerID_Y[0]) {
+            changeDirection();
+        }
     }
 
-    if (ball_YPosition == playerID_Y[1]) {
-        //xSpeed = -4;
-        //changeDirection();
+    if (ball_XPosition >= playerB_XPosition) {
+        if(ball_YPosition <= playerID_Y[1]) {
+            changeDirection();
+        }
     }
-    
 }

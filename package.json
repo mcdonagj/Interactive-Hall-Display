@@ -12,8 +12,11 @@
   "author": "John Bowers",
   "license": "ISC",
   "dependencies": {
-    "express": "4.x",
+    "express": "^4.16.4",
+    "node-vector": "0.0.1",
     "nodemon": "^1.18.4",
-    "socket.io": "2.x"
+    "socket.io": "2.x",
+    "socketio": "^1.0.0",
+    "victor": "^1.1.0"
   }
 }
